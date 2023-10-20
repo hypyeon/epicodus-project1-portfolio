@@ -73,6 +73,21 @@ nav {
         height: 3.5rem;
     }
 }
+#next-button {
+    position: absolute;
+    top: 3vh;
+    left: calc(97vw - 3.5rem);
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    width: 3.75rem;
+    height: 3.65rem;
+    img {
+        padding-bottom: 2px;
+        width: 3.5rem;
+        height: 3.5rem;
+        transform: rotate(180deg);
+    }
+}
 #timeline {
     position: relative;
     margin: 0 auto;
@@ -140,4 +155,26 @@ nav {
     left: 50%;
     margin-left: -3px;
 }
-
+#main-gallery {
+    height: 80vh;
+}
+#gallery {
+    background-color: white;
+    border-radius: 25px;
+    width: fit-content;
+    margin: auto;
+    #center {
+        width: fit-content;
+        margin: auto;
+        padding: 2rem;
+    }
+    .photo {
+        display: inline-block;
+        padding: .5rem;
+    }
+    img {
+        width: 16rem;
+        height: 16rem;
+        object-fit: cover;
+    }
+}
