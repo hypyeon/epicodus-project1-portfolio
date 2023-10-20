@@ -40,8 +40,10 @@ footer {
   background-color: white;
   padding: 0.35rem 0;
   color: gray;
+  font-size: 1rem;
 }
 footer a {
+  font-size: 1rem;
   color: gray;
 }
 
