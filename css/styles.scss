@@ -58,9 +58,6 @@ nav {
         cursor: pointer;
     }
 }
-#main-timeline {
-    height: 80vh;
-}
 #back-button {
     position: absolute;
     top: 3vh;
@@ -90,10 +87,14 @@ nav {
         transform: rotate(180deg);
     }
 }
+#main-timeline {
+    height: 80vh;
+}
 #timeline {
     position: relative;
     margin: 0 auto;
     width: 70vw;
+    //height: 80vh; <- this one creats the timeline to be cut off (learning something new)
     .time-period {
         padding: 10px 40px;
         position: relative;
@@ -103,7 +104,6 @@ nav {
             padding: 1.5rem 2.5rem;
             background-color: white;
             border-radius: 15px;
-            //width: fit-content;
             h2 {
                 margin-bottom: .5rem;
                 color: rgb(255, 159, 85);

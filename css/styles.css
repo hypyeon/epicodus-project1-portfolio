@@ -94,10 +94,6 @@ nav ul li a {
   cursor: pointer;
 }
 
-#main-timeline {
-  height: 80vh;
-}
-
 #back-button {
   position: absolute;
   top: 3vh;
@@ -127,6 +123,10 @@ nav ul li a {
   width: 3.5rem;
   height: 3.5rem;
   transform: rotate(180deg);
+}
+
+#main-timeline {
+  height: 80vh;
 }
 
 #timeline {
