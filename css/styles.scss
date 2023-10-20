@@ -24,6 +24,7 @@ nav {
     width: 100vw;
     height: 100vh;
     background-image: url('../images/background.jpg');
+    filter: brightness(95%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,6 +59,20 @@ nav {
 #main-timeline {
     height: 650px;
 }
+#back-button {
+    position: absolute;
+    top: 3vh;
+    left: 3vw;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    width: 3.75rem;
+    height: 3.65rem;
+    img {
+        padding-top: 2px;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
 #timeline {
     position: relative;
     margin: 0 auto;
@@ -74,7 +89,7 @@ nav {
             //width: fit-content;
             h2 {
                 margin-bottom: .5rem;
-                color: #FF9F55;
+                color: rgb(255, 159, 85);
                 font-size: 1.25rem;
             }
             p {
@@ -97,7 +112,7 @@ nav {
         width: 25px;
         height: 25px;
         right: -17px;
-        background-color: #ffd5b5;
+        background-color: rgb(255, 213, 181);
         border: 4px solid white;
         top: 15px;
         border-radius: 50%;
