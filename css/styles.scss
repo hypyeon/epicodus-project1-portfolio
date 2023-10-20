@@ -55,10 +55,65 @@ nav {
         cursor: pointer;
     }
 }
-
+#main-timeline {
+    height: 650px;
+}
 #timeline {
     position: relative;
     margin: 0 auto;
+    width: 70vw;
+    .time-period {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+        .description {
+            padding: 1.5rem 2.5rem;
+            background-color: white;
+            border-radius: 15px;
+            //width: fit-content;
+            h2 {
+                margin-bottom: .5rem;
+                color: #FF9F55;
+                font-size: 1.25rem;
+            }
+            p {
+                font-size: .85rem;
+                line-height: 1rem;
+                span {
+                    font-size: .65rem;
+                    color: rgba(0, 0, 0, 0.5);
+                    font-style: italic;
+                }
+                #only-mobile {
+                    display: none;
+                }
+            }
+        }
+    }
+    .time-period::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -17px;
+        background-color: #ffd5b5;
+        border: 4px solid white;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    .left {
+        left: 0;
+        text-align: right;
+        
+    }
+    .right {
+        left: 50%;
+    }
+    .right::after {
+        left: -1rem;
+    }
 }
 #timeline::after {
     content: '';
@@ -70,9 +125,4 @@ nav {
     left: 50%;
     margin-left: -3px;
 }
-#time-period {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-}
+
