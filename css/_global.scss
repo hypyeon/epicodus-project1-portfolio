@@ -23,7 +23,17 @@ body {
 }
 a {
     text-decoration: none;
+    color: black;
 }
 .grid {
     display: grid;
+}
+footer {
+    text-align: center;
+    background-color: white;
+    padding: .35rem 0;
+    color: gray;
+    a {
+        color: gray;
+    }
 }
