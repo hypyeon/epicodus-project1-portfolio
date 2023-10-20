@@ -35,14 +35,14 @@ a {
   display: grid;
 }
 
-footer {
+#footer {
   text-align: center;
   background-color: white;
   padding: 0.35rem 0;
   color: gray;
   font-size: 1rem;
 }
-footer a {
+#footer a {
   font-size: 1rem;
   color: gray;
 }
