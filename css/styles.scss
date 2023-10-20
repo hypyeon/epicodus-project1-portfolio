@@ -88,18 +88,20 @@ nav {
     }
 }
 #main-timeline {
-    height: 80vh;
+    height: fit-content;
 }
 #timeline {
     position: relative;
+    //top: 10vh;
     margin: 0 auto;
-    width: 70vw;
+    width: 90vw;
     //height: 80vh; <- this one creats the timeline to be cut off (learning something new)
     .time-period {
         padding: 10px 40px;
         position: relative;
         background-color: inherit;
         width: 50%;
+        margin-bottom: .5rem;
         .description {
             padding: 1.5rem 2.5rem;
             background-color: white;
@@ -144,6 +146,9 @@ nav {
     }
     .right::after {
         left: -1rem;
+    }
+    .shorter {
+        margin-bottom: -3.5rem;
     }
 }
 #timeline::after {

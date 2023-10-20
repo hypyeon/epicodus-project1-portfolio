@@ -126,19 +126,21 @@ nav ul li a {
 }
 
 #main-timeline {
-  height: 80vh;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 #timeline {
   position: relative;
   margin: 0 auto;
-  width: 70vw;
+  width: 90vw;
 }
 #timeline .time-period {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
   width: 50%;
+  margin-bottom: 0.5rem;
 }
 #timeline .time-period .description {
   padding: 1.5rem 2.5rem;
@@ -183,6 +185,9 @@ nav ul li a {
 }
 #timeline .right::after {
   left: -1rem;
+}
+#timeline .shorter {
+  margin-bottom: -3.5rem;
 }
 
 #timeline::after {
