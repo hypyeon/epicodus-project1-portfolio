@@ -9,6 +9,59 @@ body {
     font-family: 'Exo 2', sans-serif;
     background-color: rgba(145, 145, 93, 0.25);
 }
+nav {
+    width: 100vw;
+    height: 10vh;
+    ul {
+        text-align: center;
+        width: fit-content;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 25px;
+        padding: .75rem;
+        li {
+            width: 16vw;
+            list-style-type: none;
+            display: inline-block;
+            padding: 0 2em;
+            a {
+                color: olive;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}    
+#main-landing, #main-timeline, #main-gallery {
+    height: 90vh;
+}
+#back-button {
+    position: absolute;
+    top: 3vh;
+    left: 3vw;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    width: 3.75rem;
+    height: 3.65rem;
+    img {
+        padding-top: 2px;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+#next-button {
+    position: absolute;
+    top: 3vh;
+    left: calc(97vw - 3.5rem);
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    width: 3.75rem;
+    height: 3.65rem;
+    img {
+        padding-bottom: 2px;
+        width: 3.5rem;
+        height: 3.5rem;
+        transform: rotate(180deg);
+    }
+}
 .flex {
     display: flex;
 }

@@ -10,6 +10,64 @@ body {
   background-color: rgba(145, 145, 93, 0.25);
 }
 
+nav {
+  width: 100vw;
+  height: 10vh;
+}
+nav ul {
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  padding: 0.75rem;
+}
+nav ul li {
+  width: 16vw;
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 2em;
+}
+nav ul li a {
+  color: olive;
+  font-size: 1.5rem;
+}
+
+#main-landing, #main-timeline, #main-gallery {
+  height: 90vh;
+}
+
+#back-button {
+  position: absolute;
+  top: 3vh;
+  left: 3vw;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  width: 3.75rem;
+  height: 3.65rem;
+}
+#back-button img {
+  padding-top: 2px;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+#next-button {
+  position: absolute;
+  top: 3vh;
+  left: calc(97vw - 3.5rem);
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  width: 3.75rem;
+  height: 3.65rem;
+}
+#next-button img {
+  padding-bottom: 2px;
+  width: 3.5rem;
+  height: 3.5rem;
+  transform: rotate(180deg);
+}
+
 .flex {
   display: flex;
 }
@@ -47,28 +105,6 @@ a {
   color: gray;
 }
 
-nav {
-  padding: 1rem;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 4vh auto;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 25px;
-}
-nav ul {
-  text-align: center;
-}
-nav ul li {
-  width: 16vw;
-  list-style-type: none;
-  display: inline-block;
-  padding: 0 2em;
-}
-nav ul li a {
-  color: olive;
-  font-size: 1.5rem;
-}
-
 #background {
   width: 100vw;
   height: 100vh;
@@ -83,64 +119,27 @@ nav ul li a {
   z-index: -10;
 }
 
-#landing {
-  height: 80vh;
+#main-landing {
   gap: 2rem;
   text-align: center;
 }
-#landing h1 {
+#main-landing h1 {
   font-size: 10rem;
   font-style: italic;
   margin-bottom: 2.5rem;
   color: rgba(0, 0, 0, 0.8);
 }
-#landing p {
+#main-landing p {
   font-size: 1.25rem;
   line-height: 1.5rem;
   text-shadow: 2px 2px 2px rgb(255, 255, 255);
 }
-#landing #button {
+#main-landing #button {
   padding: 1rem 2rem;
   border-radius: 25px;
   background-color: rgb(190, 79, 31);
   color: white;
   cursor: pointer;
-}
-
-#back-button {
-  position: absolute;
-  top: 3vh;
-  left: 3vw;
-  background-color: rgba(0, 0, 0, 0.25);
-  border-radius: 50%;
-  width: 3.75rem;
-  height: 3.65rem;
-}
-#back-button img {
-  padding-top: 2px;
-  width: 3.5rem;
-  height: 3.5rem;
-}
-
-#next-button {
-  position: absolute;
-  top: 3vh;
-  left: calc(97vw - 3.5rem);
-  background-color: rgba(0, 0, 0, 0.25);
-  border-radius: 50%;
-  width: 3.75rem;
-  height: 3.65rem;
-}
-#next-button img {
-  padding-bottom: 2px;
-  width: 3.5rem;
-  height: 3.5rem;
-  transform: rotate(180deg);
-}
-
-#main-timeline {
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 #timeline {
@@ -214,10 +213,6 @@ nav ul li a {
   margin-left: -3px;
 }
 
-#main-gallery {
-  height: 80vh;
-}
-
 #gallery {
   background-color: rgba(255, 213, 181, 0.5);
   border-radius: 25px;
@@ -241,4 +236,84 @@ nav ul li a {
   -o-object-fit: cover;
      object-fit: cover;
   border: 5px solid white;
+}
+
+@media screen and (max-width: 1024px) {
+  nav ul li a {
+    font-size: 1.25rem;
+  }
+  #main-landing {
+    gap: 1rem;
+  }
+  #main-landing h1 {
+    font-size: 6rem;
+  }
+  #main-landing p {
+    font-size: 1rem;
+  }
+  #timeline {
+    width: 85vw;
+  }
+  #timeline .time-period {
+    margin-bottom: -3.5rem;
+  }
+  #timeline .time-period .description {
+    padding: 1rem 1.25rem;
+  }
+  #timeline .time-period .description h2 {
+    font-size: 1.25rem;
+  }
+  #timeline .time-period .description p {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+  }
+  #timeline .time-period .description p br {
+    display: none;
+  }
+  #timeline .time-period::after {
+    width: 15px;
+    height: 15px;
+    right: -12px;
+  }
+  #timeline .right::after {
+    left: -12px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  nav ul li a {
+    font-size: 1.25rem;
+  }
+  #main-landing {
+    gap: 1rem;
+  }
+  #main-landing h1 {
+    font-size: 8rem;
+  }
+  #main-landing p {
+    font-size: 1rem;
+  }
+  #timeline {
+    width: 75vw;
+  }
+  #timeline .time-period .description {
+    margin-bottom: -0.5rem;
+  }
+  #timeline .time-period .description h2 {
+    font-size: 1.35rem;
+  }
+  #timeline .time-period .description p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  #timeline .time-period .description p br {
+    display: none;
+  }
+  #timeline .time-period::after {
+    width: 15px;
+    height: 15px;
+    right: -12px;
+  }
+  #timeline .right::after {
+    left: -12px;
+  }
 }/*# sourceMappingURL=styles.css.map */
