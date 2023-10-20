@@ -8,6 +8,26 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+.flex {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.j-c-c {
+  justify-content: center;
+}
+
+.a-i-c {
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
 nav {
   padding: 1rem;
   width: -moz-fit-content;
@@ -26,7 +46,6 @@ nav ul li {
   padding: 0 2em;
 }
 nav ul li a {
-  text-decoration: none;
   color: olive;
 }
 
@@ -41,4 +60,27 @@ nav ul li a {
   top: 0;
   left: 0;
   z-index: -10;
+}
+
+#home-1 {
+  height: 80vh;
+  gap: 1rem;
+  text-align: center;
+}
+#home-1 h1 {
+  font-size: 8rem;
+  font-style: italic;
+  margin-bottom: 2.5rem;
+  color: rgba(0, 0, 0, 0.85);
+}
+#home-1 p {
+  line-height: 1.5rem;
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+#home-1 #button {
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  background-color: rgb(190, 79, 31);
+  color: white;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

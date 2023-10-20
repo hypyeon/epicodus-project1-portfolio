@@ -1,12 +1,4 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+@import './global';
 
 nav {
     padding: 1rem;
@@ -22,7 +14,6 @@ nav {
             display: inline-block;
             padding: 0 2em;
             a {
-                text-decoration: none;
                 color: olive;
             }
         }
@@ -40,4 +31,27 @@ nav {
     top: 0;
     left: 0;
     z-index: -10;
+}
+
+#home-1 {
+    height: 80vh;
+    gap: 1rem;
+    text-align: center;
+    h1 {
+        font-size: 8rem;
+        font-style: italic;
+        margin-bottom: 2.5rem;
+        color: rgba(0, 0, 0, 0.85);
+    }
+    p {
+        line-height: 1.5rem;
+        text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    }
+    #button {
+        padding: 1rem 2rem;
+        border-radius: 25px;
+        background-color: rgb(190, 79, 31);
+        color: white;
+        cursor: pointer;
+    }
 }
