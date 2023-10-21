@@ -29,11 +29,17 @@
         text-shadow: 2px 2px 2px rgb(255, 255, 255);
     }
     #button {
+        float: none;
         padding: 1rem 2rem;
         border-radius: 25px;
         background-color: rgb(190, 79, 31);
         color: white;
         cursor: pointer;
+    }
+    #button:hover {
+        background-color: rgb(238, 112, 58);
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.75);
+        transition-duration: .5s;
     }
 }
 #timeline {
@@ -127,7 +133,24 @@
         border: 5px solid white;
     }
 }
-
+#footer {
+    height: 6vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: gray;
+    font-size: 1rem;
+    ol {
+        padding: 0 2.5rem;
+        li {
+            list-style-type: none;
+            display: inline-block;
+            height: fit-content;
+            a {
+                font-size: 1rem;
+                color: gray;
+            }    
+        }    
+    }
+}
 @media screen and (max-width: 1024px) {
     nav {
         ul {

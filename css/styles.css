@@ -32,9 +32,17 @@ nav ul li a {
   color: olive;
   font-size: 1.5rem;
 }
+nav ul li a:hover {
+  color: rgb(255, 159, 85);
+  transition-duration: 0.5s;
+}
 
-#main-landing, #main-timeline, #main-gallery {
+#main-landing, #main-timeline {
   height: 90vh;
+}
+
+#main-gallery {
+  height: 84vh;
 }
 
 #back-button {
@@ -80,6 +88,10 @@ nav ul li a {
   justify-content: center;
 }
 
+.j-c-e {
+  justify-content: end;
+}
+
 .a-i-c {
   align-items: center;
 }
@@ -91,18 +103,6 @@ a {
 
 .grid {
   display: grid;
-}
-
-#footer {
-  text-align: center;
-  background-color: white;
-  padding: 0.35rem 0;
-  color: gray;
-  font-size: 1rem;
-}
-#footer a {
-  font-size: 1rem;
-  color: gray;
 }
 
 #background {
@@ -135,11 +135,17 @@ a {
   text-shadow: 2px 2px 2px rgb(255, 255, 255);
 }
 #main-landing #button {
+  float: none;
   padding: 1rem 2rem;
   border-radius: 25px;
   background-color: rgb(190, 79, 31);
   color: white;
   cursor: pointer;
+}
+#main-landing #button:hover {
+  background-color: rgb(238, 112, 58);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.75);
+  transition-duration: 0.5s;
 }
 
 #timeline {
@@ -236,6 +242,26 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   border: 5px solid white;
+}
+
+#footer {
+  height: 6vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: gray;
+  font-size: 1rem;
+}
+#footer ol {
+  padding: 0 2.5rem;
+}
+#footer ol li {
+  list-style-type: none;
+  display: inline-block;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#footer ol li a {
+  font-size: 1rem;
+  color: gray;
 }
 
 @media screen and (max-width: 1024px) {
