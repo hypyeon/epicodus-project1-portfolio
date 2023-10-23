@@ -23,7 +23,11 @@
                 <img src="./images/back-button.png" alt="back button by icons8">
             </a>
         </div>
-        <div id="gallery">
+        <div id="gallery"
+        data-aos="fade"
+        data-aos-duration="2000"
+        data-aos-delay="600"
+        data-aos-offset="0">
             <div id="center">
                 <div class="photo">
                     <img src="./images/photo-1.jpg" alt="Graduation">
@@ -47,5 +51,9 @@
             <li>Icons by <a href="https://icons8.com/icons">ICONS8</a>.</li>
         </ol>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Hayeong's Life Journey</title>
 </head>
 <body>
@@ -27,7 +28,10 @@
                 <img src="./images/back-button.png" alt="back button by icons8">
             </a>
         </div>
-        <div id="timeline">
+        <div id="timeline"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="400">
             <div class="time-period left">
                 <div class="description">
                     <h2>1994</h2>
@@ -74,5 +78,9 @@
         </div>
     </main>
     <footer></footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
